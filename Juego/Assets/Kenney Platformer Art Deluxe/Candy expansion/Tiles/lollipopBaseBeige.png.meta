@@ -129,13 +129,13 @@ TextureImporter:
       name: lollipopBaseBeige_0
       rect:
         serializedVersion: 2
-        x: 30
+        x: 31
         y: 0
-        width: 10
+        width: 39
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 18, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f3f54e05110c1f3468e5e78ed80e59a7
     internalID: 0
     vertices: []
     indices: 
