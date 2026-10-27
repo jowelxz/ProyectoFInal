@@ -1,38 +1,48 @@
-using UnityEngine;
 
-public class MovimientoPlayer : MonoBehaviour
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class MovimientoJugador : MonoBehaviour
 {
-    [Header("Movimiento")]
     public float velocidad = 5f;
     public float fuerzaSalto = 10f;
+    public GroundCheck groundCheck;
 
     private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
     private float movimientoX;
-    private bool enSuelo;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         movimientoX = 0f;
 
-        if (Input.GetKey(KeyCode.A))
+        if (Keyboard.current == null) return;
+
+        if (Keyboard.current.aKey.isPressed)
+        {
             movimientoX = -1f;
+            spriteRenderer.flipX = true;
+        }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Keyboard.current.dKey.isPressed)
+        {
             movimientoX = 1f;
+            spriteRenderer.flipX = false;
+        }
 
-        if (Input.GetKeyDown(KeyCode.W) && enSuelo)
+        if (Keyboard.current.wKey.wasPressedThisFrame
+            && groundCheck != null && groundCheck.isGround)
         {
             rb.linearVelocity = new Vector2(
                 rb.linearVelocity.x,
                 fuerzaSalto
             );
-
-            enSuelo = false;
         }
     }
 
@@ -42,17 +52,5 @@ public class MovimientoPlayer : MonoBehaviour
             movimientoX * velocidad,
             rb.linearVelocity.y
         );
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Suelo"))
-            enSuelo = true;
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Suelo"))
-            enSuelo = false;
     }
 }

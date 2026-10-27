@@ -1,0 +1,23 @@
+- Organizar bien el fondo y revisar que todo cuadre con la estética del nivel y la cámara.
+
+- Ajustar el tamaño de Ferb y dejar funcionando su animación.
+
+- Revisar que el nivel esté completo y que se pueda pasar en aproximadamente 1 minuto.
+
+- Cambiar el nombre de la escena a "Nivel 2".
+
+- Poner y configurar los scripts que necesita el nivel.
+
+- Revisar la Main Camera, el Cinemachine Brain y que la cámara siga bien al personaje.
+
+- Terminar de configurar los obstáculos, las trampas que quitan vida, las trampas mortales, las curaciones y los escudos.
+
+- Revisar que la barra de vida y los puntos funcionen bien.
+
+- Configurar los 100 puntos necesarios para desbloquear el objeto y llegar a la meta.
+
+- Dejar funcionando el temporizador, la pausa, el reinicio y las pantallas de victoria y derrota.
+
+- Probar que todo funcione bien, que el nivel se pueda completar y que al reiniciar vuelva a su estado inicial.
+
+Creo que eso es lo principal.

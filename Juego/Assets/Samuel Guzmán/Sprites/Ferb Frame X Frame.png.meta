@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: 0e45210be5234a54d857c144552401ae
+guid: 0494c32619f0d964e8caeb00a881e68f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1471823190475970650
-    second: pj_0
+      213: -8126676072025540726
+    second: Ferb Frame X Frame_0
   - first:
-      213: 8790195860703574900
-    second: pj_1
+      213: -8657436248914437990
+    second: Ferb Frame X Frame_1
   - first:
-      213: -8270811723316917597
-    second: pj_2
+      213: -5493808730256066820
+    second: Ferb Frame X Frame_2
   - first:
-      213: 2180412119149681447
-    second: pj_3
+      213: -4899315629624532964
+    second: Ferb Frame X Frame_3
   - first:
-      213: -3228142681350801169
-    second: pj_4
+      213: -159490561583315539
+    second: Ferb Frame X Frame_4
   - first:
-      213: 2671193187716030955
-    second: pj_5
+      213: -8332918903729972173
+    second: Ferb Frame X Frame_5
+  - first:
+      213: 1411486054351797474
+    second: Ferb Frame X Frame_6
+  - first:
+      213: -1340829516312889893
+    second: Ferb Frame X Frame_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,133 +147,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pj_0
+      name: Ferb Frame X Frame_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 70
-        width: 204
-        height: 357
+        x: 33
+        y: 48
+        width: 333
+        height: 791
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a76f773b98039be0800000000000000
-      internalID: -1471823190475970650
+      spriteID: a8730426b2f383f80800000000000000
+      internalID: -8126676072025540726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj_1
+      name: Ferb Frame X Frame_1
       rect:
         serializedVersion: 2
-        x: 335
-        y: 70
-        width: 185
-        height: 359
+        x: 370
+        y: 49
+        width: 383
+        height: 807
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47b7857109c0df970800000000000000
-      internalID: 8790195860703574900
+      spriteID: a985dd5c99b9ad780800000000000000
+      internalID: -8657436248914437990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj_2
+      name: Ferb Frame X Frame_2
       rect:
         serializedVersion: 2
-        x: 594
-        y: 69
-        width: 192
-        height: 360
+        x: 754
+        y: 687
+        width: 16
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3aa0f8bee8c283d80800000000000000
-      internalID: -8270811723316917597
+      spriteID: cf6b529311212c3b0800000000000000
+      internalID: -5493808730256066820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj_3
+      name: Ferb Frame X Frame_3
       rect:
         serializedVersion: 2
-        x: 824
-        y: 69
-        width: 209
-        height: 359
+        x: 753
+        y: 48
+        width: 281
+        height: 807
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72b9fd12541624e10800000000000000
-      internalID: 2180412119149681447
+      spriteID: c10e5bd7462220cb0800000000000000
+      internalID: -4899315629624532964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj_4
+      name: Ferb Frame X Frame_4
       rect:
         serializedVersion: 2
-        x: 1092
-        y: 70
-        width: 213
-        height: 358
+        x: 1036
+        y: 48
+        width: 390
+        height: 811
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe8fec1b5555333d0800000000000000
-      internalID: -3228142681350801169
+      spriteID: da58cc3ed2069cdf0800000000000000
+      internalID: -159490561583315539
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pj_5
+      name: Ferb Frame X Frame_5
       rect:
         serializedVersion: 2
-        x: 1359
-        y: 70
-        width: 207
-        height: 359
+        x: 1427
+        y: 50
+        width: 331
+        height: 806
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be1e1483d0cf11520800000000000000
-      internalID: 2671193187716030955
+      spriteID: 33c990128668b5c80800000000000000
+      internalID: -8332918903729972173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ferb Frame X Frame_6
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 427
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec7e0b861b969310800000000000000
+      internalID: 1411486054351797474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ferb Frame X Frame_7
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 16
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5bfcfa8aa646de0800000000000000
+      internalID: -1340829516312889893
       vertices: []
       indices: 
       edges: []
@@ -276,7 +326,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c62587be0ecb52143a9d9c6af7b9380e
     internalID: 0
     vertices: []
     indices: 
@@ -284,14 +334,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      pj_0: -1471823190475970650
-      pj_1: 8790195860703574900
-      pj_2: -8270811723316917597
-      pj_3: 2180412119149681447
-      pj_4: -3228142681350801169
-      pj_5: 2671193187716030955
+      Ferb Frame X Frame_0: -8126676072025540726
+      Ferb Frame X Frame_1: -8657436248914437990
+      Ferb Frame X Frame_2: -5493808730256066820
+      Ferb Frame X Frame_3: -4899315629624532964
+      Ferb Frame X Frame_4: -159490561583315539
+      Ferb Frame X Frame_5: -8332918903729972173
+      Ferb Frame X Frame_6: 1411486054351797474
+      Ferb Frame X Frame_7: -1340829516312889893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
