@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class TrampaMortalMenos : MonoBehaviour
+public class TrampaMortaMenos : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -10,7 +10,22 @@ public class TrampaMortalMenos : MonoBehaviour
                 collision.gameObject.GetComponent<PlayerStats>();
 
             if (vidaJugador != null)
-                vidaJugador.RestarVida(10);
+            {
+                if (vidaJugador.tieneEscudo)
+                {
+                    vidaJugador.tieneEscudo = false;
+                    Debug.Log("¡El escudo bloqueó el golpe!");
+                }
+                else
+                {
+                    vidaJugador.RestarVida(30);
+
+                    if (vidaJugador.vida <= 0)
+                    {
+                        Destroy(collision.gameObject);
+                    }
+                }
+            }
         }
     }
 }

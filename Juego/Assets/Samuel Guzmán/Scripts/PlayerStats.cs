@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerStats : MonoBehaviour
 {
     public int vida = 100;
+    public bool tieneEscudo = false;
 
     public void RestarVida(int daño)
     {
