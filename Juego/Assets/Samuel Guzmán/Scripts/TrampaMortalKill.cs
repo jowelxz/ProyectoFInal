@@ -11,7 +11,7 @@ public class TrampaMortalKill : MonoBehaviour
 
             if (vidaJugador != null)
             {
-                vidaJugador.RestarVida(vidaJugador.vida);
+                vidaJugador.RestarVida(vidaJugador.vidaActual);
             };
         }
 

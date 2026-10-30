@@ -2,19 +2,36 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int vida = 100;
+    public int vidaActual = 100;
+    public int vidaMaxima = 100;
     public bool tieneEscudo = false;
+    public GameObject pachesEquipado;
+
+    void Update()
+    {
+        pachesEquipado.SetActive(tieneEscudo);
+    }
+
+    public void SumarVida(int cantidad)
+    {
+        vidaActual += cantidad;
+
+        if (vidaActual > vidaMaxima)
+        {
+            vidaActual = vidaMaxima;
+        }
+    }
 
     public void RestarVida(int daño)
     {
-        vida -= daño;
+        vidaActual -= daño;
 
-        if (vida < 0)
-            vida = 0;
+        if (vidaActual < 0)
+            vidaActual = 0;
 
-        Debug.Log("Vida actual: " + vida);
+        Debug.Log("Vida actual: " + vidaActual);
 
-        if (vida <= 0)
+        if (vidaActual <= 0)
             Debug.Log("GAME OVER");
     }
 }

@@ -20,7 +20,7 @@ public class TrampaMortaMenos : MonoBehaviour
                 {
                     vidaJugador.RestarVida(30);
 
-                    if (vidaJugador.vida <= 0)
+                    if (vidaJugador.vidaActual <= 0)
                     {
                         Destroy(collision.gameObject);
                     }
