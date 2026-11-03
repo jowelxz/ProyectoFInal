@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
@@ -9,6 +8,8 @@ public class PlayerStats : MonoBehaviour
     public int puntos = 0;
 
     public UIManager uiManager;
+
+    public TMPro.TextMeshProUGUI textoPuntos;
 
     public bool tieneEscudo = false;
     public GameObject pachesEquipado;
@@ -71,6 +72,9 @@ public class PlayerStats : MonoBehaviour
     public void SumarPuntos(int cantidad)
     {
         puntos += cantidad;
+
+        textoPuntos.text = puntos + " / 100";
+
         Debug.Log("Puntos actuales: " + puntos);
     }
 }
