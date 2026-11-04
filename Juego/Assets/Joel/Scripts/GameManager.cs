@@ -6,6 +6,20 @@ public class GameManager : MonoBehaviour
     public GameObject panelGanaste;
     public GameObject panelPerdiste;
 
+    public GameObject panelPausa;
+
+    public void MostrarPausa()
+    {
+        panelPausa.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ReanudarJuego()
+    {
+        panelPausa.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
     public void MostrarPerdiste()
     {
         panelPerdiste.SetActive(true);
