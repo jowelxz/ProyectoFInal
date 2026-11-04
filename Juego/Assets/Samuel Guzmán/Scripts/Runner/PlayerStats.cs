@@ -43,14 +43,14 @@ public class PlayerStats : MonoBehaviour
         if (vida < 0)
             vida = 0;
 
-        Debug.Log("Vida actual: " + vida);
-
         ActualizarBarra();
 
         if (vida <= 0)
+        {
+            FindFirstObjectByType<GameManager>().MostrarPerdiste();
             Debug.Log("GAME OVER");
+        }
     }
-
     void ActualizarBarra()
     {
         uiManager.SetFillAmount((float)vida / vidaMaxima);
