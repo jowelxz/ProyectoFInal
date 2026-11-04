@@ -3,8 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+
+    public GameObject panelPausa;
     public GameObject panelGanaste;
     public GameObject panelPerdiste;
+
+    public void MostrarPausa()
+    {
+        panelPausa.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void ReanudarJuego()
+    {
+        panelPausa.SetActive(false);
+        Time.timeScale = 1f;
+    }
 
     public void MostrarPerdiste()
     {
