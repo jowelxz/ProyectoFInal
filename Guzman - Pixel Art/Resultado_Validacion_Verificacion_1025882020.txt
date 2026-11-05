@@ -1,0 +1,226 @@
+﻿VALIDACIÓN Y VERIFICACIÓN DE SOFTWARE — AUTOEVALUACIÓN
+Estudiante: brahian andres osorio arango
+Código: 1025882020
+Total: 410 / 1000 puntos
+
+El profesor Gabriel Mauricio Ramírez Villegas te desea muchos éxitos personales, familiares y profesionales. Que todo lo visto y aprendido puedas aplicarlo en tu vida.
+¡Felicidades! ¡No me verás más en clase! Jejeje.
+
+Crucigrama: 105 / 350
+Ahorcado: 200 / 300
+Retos de código: 105 / 350
+
+CRUCIGRAMA
+1 Vertical: Herramienta de análisis estático que permite identificar problemas de calidad y seguridad en el código.
+Tu respuesta: ········· | Correcta: SonarQube (SONARQUBE) | 0 puntos
+
+2 Vertical: Lenguaje utilizado para describir escenarios de comportamiento con palabras clave como Given, When y Then.
+Tu respuesta: GHERKIN | Correcta: Gherkin (GHERKIN) | 35 puntos
+
+3 Horizontal: Proceso que comprueba si el software satisface las necesidades de los usuarios y su uso previsto.
+Tu respuesta: ·········· | Correcta: Validación (VALIDACION) | 0 puntos
+
+3 Vertical: Proceso que comprueba si los productos del desarrollo cumplen los requisitos y las especificaciones establecidos.
+Tu respuesta: ·········I·· | Correcta: Verificación (VERIFICACION) | 0 puntos
+
+4 Vertical: Técnica de diseño de pruebas que utiliza la estructura interna del código, sus decisiones y caminos de ejecución.
+Tu respuesta: ·········· | Correcta: Caja blanca (CAJABLANCA) | 0 puntos
+
+5 Vertical: Completa: ________ ciclomática, medida relacionada con el número de caminos linealmente independientes del flujo de control.
+Tu respuesta: COMPLEJIDAD | Correcta: Complejidad (COMPLEJIDAD) | 35 puntos
+
+6 Horizontal: Tipo de prueba que busca detectar efectos adversos de un cambio sobre funcionalidades que antes funcionaban correctamente.
+Tu respuesta: ···R····· | Correcta: Regresión (REGRESION) | 0 puntos
+
+7 Vertical: Medida que indica qué proporción de elementos, como instrucciones o ramas, fue ejercitada por las pruebas.
+Tu respuesta: ········· | Correcta: Cobertura (COBERTURA) | 0 puntos
+
+8 Horizontal: Servidor de automatización utilizado para organizar pipelines de integración y entrega continua, incluyendo la ejecución de pruebas.
+Tu respuesta: JENKINS | Correcta: Jenkins (JENKINS) | 35 puntos
+
+9 Horizontal: Documento que define el alcance, los objetivos, los recursos, el cronograma y los criterios de entrada y salida de las pruebas.
+Tu respuesta: ···········A· | Correcta: Plan de pruebas (PLANDEPRUEBAS) | 0 puntos
+
+AHORCADO
+Técnica que permite ejecutar una misma lógica de prueba con diferentes conjuntos de entradas y resultados esperados.
+Correcta: Parametrización (PARAMETRIZACION) | Descubierta: 100 puntos
+Avance: P A R A M E T R I Z A C I O N
+Letras usadas: P, U, R, A, B, E, I, D, T, M, Z, C, O, N
+
+Relación que permite vincular requisitos con casos de prueba, resultados y defectos encontrados.
+Correcta: Trazabilidad (TRAZABILIDAD) | Descubierta: 100 puntos
+Avance: T R A Z A B I L I D A D
+Letras usadas: A, T, R, Z, B, I, L, D
+
+Propiedad por la cual una prueba produce el mismo resultado cuando se ejecuta con las mismas entradas y condiciones controladas.
+Correcta: Determinismo (DETERMINISMO) | No descubierta: 0 puntos
+Avance: _ E T E _ _ _ _ _ _ _ _
+Letras usadas: A, B, E, T
+
+RETOS DE CÓDIGO
+1. Patrón AAA (JavaScript)
+Se espera que un descuento del 10 % sobre 200 produzca un total de 180.
+test("calcula el precio con descuento", () => {
+  const precio = 200;
+  const descuento = 0.10;
+  const resultado = precio * (1 - descuento);
+  // Completar la comprobación
+});
+
+¿Qué instrucción corresponde a la fase Assert?
+A. console.log(resultado);
+B. expect(resultado).toBe(180);
+C. expect(resultado).toBe(200);
+D. const esperado = 180;
+Tu elección: B | Correcta: B | 35 puntos
+La aserción comprueba automáticamente el resultado esperado. Declarar una variable o imprimir el valor no determina si la prueba pasa o falla. Arrange prepara los datos; Act ejecuta la operación; Assert verifica el resultado.
+
+2. Valores límite (TypeScript)
+
+function puedeInscribirse(edad: number): boolean {
+  return edad >= 18 && edad <= 65;
+}
+
+¿Qué conjunto comprueba ambos límites y sus valores inmediatamente exteriores?
+A. 20 → true; 30 → true; 40 → true; 50 → true.
+B. 17 → true; 18 → false; 65 → false; 66 → true.
+C. 17 → false; 18 → true; 65 → true; 66 → false.
+D. 18 → false; 19 → true; 64 → true; 65 → false.
+Tu elección: D | Correcta: C | 0 puntos
+Se verifican 18 y 65, extremos aceptados, junto con 17 y 66, inmediatamente exteriores. Esta técnica de caja negra ayuda a detectar errores en los operadores de comparación.
+
+3. Independencia y FIRST (Python)
+
+usuarios = []
+
+def test_agregar():
+    usuarios.append("Ana")
+    assert len(usuarios) == 1
+
+def test_lista_vacia():
+    assert len(usuarios) == 0
+
+¿Qué cambio elimina la dependencia entre las pruebas?
+A. Crear una lista nueva para cada prueba, directamente o mediante una fixture.
+B. Ejecutar siempre test_lista_vacia primero.
+C. Agregar una pausa entre las pruebas.
+D. Eliminar la aserción de la segunda prueba.
+Tu elección: A | Correcta: A | 35 puntos
+Compartir estado mutable hace que el resultado dependa del orden de ejecución. Cada prueba debe preparar un estado independiente, de acuerdo con FIRST: rápidas, independientes, repetibles, autoverificables y oportunas.
+
+4. Grafo y cobertura de ramas (Java)
+Analiza el método y el grafo de flujo de control. Cada par de las opciones representa (monto, saldo).
+static String autorizar(int monto, int saldo) {
+    if (monto <= 0) return "INVALIDO";
+    if (monto > saldo) return "INSUFICIENTE";
+    return "APROBADO";
+}
+Grafo: 1 → 2; 2 Sí → 3 → 7; 2 No → 4; 4 Sí → 5 → 7; 4 No → 6 → 7.
+¿Qué conjunto mínimo de pruebas permite recorrer todas las ramas de las dos decisiones?
+A. (10, 100) y (50, 100).
+B. (0, 100) y (-10, 100).
+C. (-10, 100), (150, 100) y (50, 100).
+D. (150, 100) y (200, 100).
+Tu elección: A | Correcta: C | 0 puntos
+Se necesitan tres pruebas: (-10, 100) recorre 1 → 2 → 3 → 7 y retorna INVALIDO; (150, 100) recorre 1 → 2 → 4 → 5 → 7 y retorna INSUFICIENTE; (50, 100) recorre 1 → 2 → 4 → 6 → 7 y retorna APROBADO. Así se recorren las salidas verdadera y falsa de ambas decisiones. La complejidad ciclomática es 2 decisiones + 1 = 3.
+
+5. Regresión y parámetros predeterminados (JavaScript)
+Antes, total(100) devolvía 100. Después de agregar descuentos, la función quedó así:
+function total(precio, descuento) {
+  return precio * (1 - descuento);
+}
+
+test("conserva el cálculo sin descuento", () => {
+  expect(total(100)).toBe(100);
+});
+
+¿Qué cambio conserva el comportamiento anterior y permite aplicar descuentos?
+A. Cambiar el resultado esperado por NaN.
+B. Eliminar la prueba porque corresponde a la versión anterior.
+C. Cambiar la operación por precio - descuento.
+D. Declarar function total(precio, descuento = 0).
+Tu elección: C | Correcta: D | 0 puntos
+Si no se proporciona el segundo argumento, su valor actual es undefined y el cálculo produce NaN. El valor predeterminado cero conserva el comportamiento sin descuento y permite especificar otros descuentos.
+
+6. Prueba E2E asíncrona (TypeScript · Playwright)
+El requisito indica que un inicio de sesión correcto debe llevar a /panel. Se supone configurada la URL base de la aplicación.
+test("inicia sesión", async ({ page }) => {
+  await page.goto("/login");
+  await page.getByLabel("Correo").fill("ana@ejemplo.com");
+  await page.getByLabel("Contraseña").fill("ClaveDePrueba");
+  await page.getByRole("button", { name: "Ingresar" }).click();
+  // Comprobar el resultado
+});
+
+¿Qué instrucción verifica el resultado esperado con Playwright?
+A. console.log("Ingreso correcto");
+B. await page.waitForTimeout(5000);
+C. await expect(page).toHaveURL(/\/panel$/);
+D. expect(true).toBe(true);
+Tu elección: D | Correcta: C | 0 puntos
+La aserción comprueba la navegación esperada y espera hasta que la condición se cumpla o venza su tiempo de espera. Una pausa fija no verifica que el inicio de sesión haya funcionado.
+
+7. Construcción de un caso en DeepEval (Python)
+Se quiere evaluar la respuesta real del asistente frente a una referencia correcta.
+respuesta = "Lima"
+caso = LLMTestCase(
+    input="¿Cuál es la capital de Colombia?",
+    actual_output="Bogotá",
+    expected_output=respuesta
+)
+
+¿Qué corrección debe realizarse?
+A. Usar actual_output=respuesta y expected_output=respuesta.
+B. Eliminar expected_output porque una respuesta no vacía siempre es correcta.
+C. Intercambiar la pregunta con la respuesta.
+D. Usar actual_output=respuesta y expected_output="Bogotá".
+Tu elección: C | Correcta: D | 0 puntos
+actual_output debe contener la respuesta producida por el sistema y expected_output la referencia esperada. Construir el caso todavía no ejecuta una evaluación: debe aplicarse una métrica apropiada.
+
+8. Stagehand y comprobación del resultado (TypeScript)
+Stagehand está inicializado. La función auxiliar leerMensajeDeEstado() devuelve una Promise<string> con el mensaje mostrado por la aplicación.
+await stagehand.act("Haz clic en el botón Guardar");
+const mensaje = leerMensajeDeEstado();
+console.log("Guardado correcto");
+
+¿Qué cambio permite comprobar que la aplicación mostró “Guardado”?
+A. Usar const mensaje = await leerMensajeDeEstado(); y después expect(mensaje).toBe("Guardado");.
+B. Mantener el código porque console.log ya valida el resultado.
+C. Repetir la acción de guardar tres veces.
+D. Agregar expect(true).toBe(true);.
+Tu elección: A | Correcta: A | 35 puntos
+Debe esperarse la resolución de la promesa y comprobar el resultado observable. Ejecutar una acción de automatización no demuestra por sí solo que el software produjo el resultado correcto.
+
+9. Comparación de cadenas y análisis estático (Java)
+
+static boolean esAdministrador(String rol) {
+    return rol == "ADMIN";
+}
+
+// Prueba:
+assertTrue(esAdministrador(new String("ADMIN")));
+
+¿Qué cambio compara correctamente el contenido y admite que rol sea null sin lanzar una excepción?
+A. return rol != null;
+B. return "ADMIN".equals(rol);
+C. return rol.equals("ADMIN");
+D. return rol == new String("ADMIN");
+Tu elección: C | Correcta: B | 0 puntos
+En Java, == compara referencias cuando se utiliza con objetos. equals compara el contenido. Invocarlo sobre la constante evita una excepción si rol es null. Las pruebas y el análisis estático se complementan para encontrar defectos.
+
+10. Jenkins y propagación de fallos (JavaScript · Node.js)
+Jenkins ejecuta este script. execSync está importado desde node:child_process.
+try {
+  execSync("npm test", { stdio: "inherit" });
+} catch (error) {
+  console.log("Las pruebas fallaron");
+}
+execSync("npm run deploy", { stdio: "inherit" });
+
+¿Qué cambio hace que el script termine con error y no alcance el despliegue cuando fallen las pruebas?
+A. Cambiar console.log por console.warn.
+B. Agregar una espera antes del despliegue.
+C. Reemplazar el contenido del catch por throw error;.
+D. Ejecutar nuevamente el despliegue dentro del catch.
+Tu elección: Sin responder | Correcta: C | 0 puntos
+Relanzar la excepción impide continuar con el despliegue y permite que el paso de Jenkins detecte el fallo. Registrar el error y continuar lo oculta como condición de bloqueo. El pipeline debe respetar el resultado fallido del script.

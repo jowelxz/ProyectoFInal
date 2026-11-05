@@ -2,20 +2,30 @@ using UnityEngine;
 
 public class Meta : MonoBehaviour
 {
+    public GameObject panelFaltanRequisitos;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             PlayerStats jugador = collision.GetComponent<PlayerStats>();
 
-            if (jugador != null && jugador.puntos >= 100)
+            if (jugador != null)
             {
-                FindFirstObjectByType<GameManager>().MostrarGanaste();
-            }
-            else
-            {
-                Debug.Log("Necesitas 100 puntos para llegar a Isabella");
+                if (jugador.puntos >= 100 && jugador.tieneRamo)
+                {
+                    FindFirstObjectByType<GameManager>().MostrarGanaste();
+                }
+                else
+                {
+                    panelFaltanRequisitos.SetActive(true);
+                }
             }
         }
+    }
+
+    public void CerrarMensaje()
+    {
+        panelFaltanRequisitos.SetActive(false);
     }
 }
