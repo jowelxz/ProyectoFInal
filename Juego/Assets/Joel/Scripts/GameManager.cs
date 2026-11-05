@@ -8,6 +8,12 @@ public class GameManager : MonoBehaviour
 
     public GameObject panelPausa;
 
+    public void IrAlLobby()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Lobby");
+    }
+
     public void MostrarPausa()
     {
         panelPausa.SetActive(true);

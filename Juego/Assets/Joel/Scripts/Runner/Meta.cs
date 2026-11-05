@@ -2,6 +2,13 @@ using UnityEngine;
 
 public class Meta : MonoBehaviour
 {
+    public GameObject panelFaltanPuntos;
+
+    public void CerrarMensaje()
+    {
+        panelFaltanPuntos.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -14,7 +21,7 @@ public class Meta : MonoBehaviour
             }
             else
             {
-                Debug.Log("Necesitas 100 puntos para llegar a Isabella");
+                panelFaltanPuntos.SetActive(true);
             }
         }
     }
