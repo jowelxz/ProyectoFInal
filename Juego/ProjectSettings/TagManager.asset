@@ -4,6 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
+<<<<<<< HEAD
+=======
+  - Suelo
+>>>>>>> origin/Samuel
   - Ground
   layers:
   - Default
