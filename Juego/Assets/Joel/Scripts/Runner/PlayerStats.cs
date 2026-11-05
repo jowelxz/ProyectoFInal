@@ -14,9 +14,13 @@ public class PlayerStats : MonoBehaviour
     public bool tieneEscudo = false;
     public GameObject pachesEquipado;
 
+    public bool tieneMoño = false;
+    public GameObject moñoEquipado;
+
     void Update()
     {
         pachesEquipado.SetActive(tieneEscudo);
+        moñoEquipado.SetActive(tieneMoño);
     }
 
     void Start()
