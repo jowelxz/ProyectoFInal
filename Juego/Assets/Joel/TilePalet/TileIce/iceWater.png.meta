@@ -132,15 +132,9 @@ TextureImporter:
         x: 0
         y: 0
         width: 70
-<<<<<<< HEAD:Juego/Assets/Joel/TilePalet/TileIce/iceWater.png.meta
-        height: 46
+        height: 0
       alignment: 0
       pivot: {x: 0, y: 0}
-=======
-        height: 70
-      alignment: 9
-      pivot: {x: 0.44606256, y: 1.0070119}
->>>>>>> origin/Samuel:Juego/Assets/Kenney Platformer Art Deluxe/Candy expansion/Tiles/creamPink.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -157,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5d6957b91ab296e47bc37b1dda42e08e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

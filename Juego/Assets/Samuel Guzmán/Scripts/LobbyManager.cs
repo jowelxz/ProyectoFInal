@@ -1,29 +1,37 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LobbyManager : MonoBehaviour
+namespace Samuel
 {
-    public string nombreNivel = "Nivel 2";
-
-    public GameObject panelCreditos;
-
-    public void MostrarCreditos()
+    public class LobbyManager : MonoBehaviour
     {
-        panelCreditos.SetActive(true);
-    }
+        public string nombreNivel = "Nivel 2";
 
-    public void CerrarCreditos()
-    {
-        panelCreditos.SetActive(false);
-    }
+        public GameObject panelCreditos;
 
-    public void Jugar()
-    {
-        SceneManager.LoadScene(nombreNivel);
-    }
+        public void MostrarCreditos()
+        {
+            panelCreditos.SetActive(true);
+        }
 
-    public void Salir()
-    {
-        Application.Quit();
+        public void CerrarCreditos()
+        {
+            panelCreditos.SetActive(false);
+        }
+
+        public void Jugar()
+        {
+            SceneManager.LoadScene(nombreNivel);
+        }
+
+        public void IrAlMenu()
+        {
+            SceneManager.LoadScene("MenuInicial");
+        }
+
+        public void Salir()
+        {
+            Application.Quit();
+        }
     }
 }

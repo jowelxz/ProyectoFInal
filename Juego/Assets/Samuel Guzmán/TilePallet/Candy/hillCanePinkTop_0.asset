@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: hillCanePinkTop_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -7405476221366743788, guid: 1b4f479de44871b48b6ce70d034d5a32, type: 3}
+  m_Sprite: {fileID: -7405476221366743788, guid: e35b523cd32a5f34fa29d9b9d922d629, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

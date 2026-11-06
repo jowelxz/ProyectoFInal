@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: cakeCliffLeft_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -8016733553618771899, guid: de67206479360834f99512212b04598c, type: 3}
+  m_Sprite: {fileID: -8016733553618771899, guid: f77033554c9a83f44be6de62a94c2b4b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

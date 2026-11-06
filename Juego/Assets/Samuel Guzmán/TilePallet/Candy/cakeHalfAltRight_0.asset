@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: cakeHalfAltRight_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -5664033379722951812, guid: 2fa36d613479bac4bbc0746657c40b04, type: 3}
+  m_Sprite: {fileID: -5664033379722951812, guid: d165ea1157a5b47438eee9adcb99e23b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

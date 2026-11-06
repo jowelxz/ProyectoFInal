@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 70
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,19 +116,12 @@ TextureImporter:
       name: Barra de Vida - Phineas_0
       rect:
         serializedVersion: 2
-<<<<<<< HEAD:Juego/Assets/Joel/Sprites/Barra de Vida - Phineas.png.meta
         x: 31
         y: 49
         width: 3289
         height: 506
-=======
-        x: 0
-        y: 0
-        width: 70
-        height: 70
->>>>>>> origin/Samuel:Juego/Assets/Kenney Platformer Art Deluxe/Candy expansion/Tiles/heart.png.meta
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -145,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 92080c01095af814d96ba302e89a0938
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 

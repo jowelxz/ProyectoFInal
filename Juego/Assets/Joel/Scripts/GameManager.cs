@@ -1,54 +1,67 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace Joel
 {
-    public GameObject panelGanaste;
-    public GameObject panelPerdiste;
-    public GameObject panelPausa;
-
-    public void MostrarGanaste()
+    public class GameManager : MonoBehaviour
     {
-        panelGanaste.SetActive(true);
-        MusicManager.instancia.PausarMusica();
-        Time.timeScale = 0f;
-    }
+        public GameObject panelGanaste;
+        public GameObject panelPerdiste;
+        public GameObject panelPausa;
 
-    public void MostrarPerdiste()
-    {
-        panelPerdiste.SetActive(true);
-        MusicManager.instancia.PausarMusica();
-        Time.timeScale = 0f;
-    }
+        public void MostrarGanaste()
+        {
+            PlayerPrefs.SetInt("Nivel2Desbloqueado", 1);
+            PlayerPrefs.Save();
 
-    public void MostrarPausa()
-    {
-        panelPausa.SetActive(true);
-        MusicManager.instancia.PausarMusica();
-        Time.timeScale = 0f;
-    }
+            panelGanaste.SetActive(true);
+            MusicManager.instancia.PausarMusica();
+            Time.timeScale = 0f;
+        }
 
-    public void ReanudarJuego()
-    {
-        panelPausa.SetActive(false);
-        MusicManager.instancia.ReanudarMusica();
-        Time.timeScale = 1f;
-    }
+        public void MostrarPerdiste()
+        {
+            panelPerdiste.SetActive(true);
+            MusicManager.instancia.PausarMusica();
+            Time.timeScale = 0f;
+        }
 
-    public void ReiniciarNivel()
-    {
-        Time.timeScale = 1f;
-        MusicManager.instancia.ReiniciarMusica();
+        public void MostrarPausa()
+        {
+            panelPausa.SetActive(true);
+            MusicManager.instancia.PausarMusica();
+            Time.timeScale = 0f;
+        }
 
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().buildIndex
-        );
-    }
+        public void ReanudarJuego()
+        {
+            panelPausa.SetActive(false);
+            MusicManager.instancia.ReanudarMusica();
+            Time.timeScale = 1f;
+        }
 
-    public void IrAlLobby()
-    {
-        Time.timeScale = 1f;
-        MusicManager.instancia.ReanudarMusica();
-        SceneManager.LoadScene("Lobby");
+        public void ReiniciarNivel()
+        {
+            Time.timeScale = 1f;
+            MusicManager.instancia.ReiniciarMusica();
+
+            SceneManager.LoadScene(
+                SceneManager.GetActiveScene().buildIndex
+            );
+        }
+
+        public void IrAlMenuPrincipal()
+        {
+            Time.timeScale = 1f;
+            MusicManager.instancia.ReanudarMusica();
+            SceneManager.LoadScene("MenuInicial");
+        }
+
+        public void IrAlLobby()
+        {
+            Time.timeScale = 1f;
+            MusicManager.instancia.ReanudarMusica();
+            SceneManager.LoadScene("Lobby Joel");
+        }
     }
 }

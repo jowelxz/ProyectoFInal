@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: waffleWhite_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 4718731639896473561, guid: 9e59358763b497642aad0389cf8d1300, type: 3}
+  m_Sprite: {fileID: 4718731639896473561, guid: 0e3fc66244e60e34dbfe1e95193dbc32, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

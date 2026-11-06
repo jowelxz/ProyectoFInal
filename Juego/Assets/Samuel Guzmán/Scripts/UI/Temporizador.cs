@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using Samuel;
 
 public class Temporizador : MonoBehaviour
 {

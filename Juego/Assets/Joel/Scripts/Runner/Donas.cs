@@ -1,17 +1,21 @@
 using UnityEngine;
 
-public class Donas : MonoBehaviour
+namespace Joel
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class Donas : MonoBehaviour
     {
-        if (collision.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            PlayerStats jugador = collision.GetComponent<PlayerStats>();
-
-            if (jugador != null)
+            if (collision.CompareTag("Player"))
             {
-                jugador.SumarPuntos(20);
-                Destroy(gameObject);
+                PlayerStats jugador =
+                    collision.GetComponent<PlayerStats>();
+
+                if (jugador != null)
+                {
+                    jugador.SumarPuntos(20);
+                    Destroy(gameObject);
+                }
             }
         }
     }

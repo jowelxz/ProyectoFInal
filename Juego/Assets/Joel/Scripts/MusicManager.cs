@@ -1,43 +1,48 @@
 using UnityEngine;
 
-public class MusicManager : MonoBehaviour
+namespace Joel
 {
-    public static MusicManager instancia;
-    private AudioSource audioSource;
-
-    void Awake()
+    public class MusicManager : MonoBehaviour
     {
-        if (instancia == null)
+        public static MusicManager instancia;
+
+        private AudioSource audioSource;
+
+        void Awake()
         {
-            instancia = this;
-            DontDestroyOnLoad(gameObject);
+            if (instancia == null)
+            {
+                instancia = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            audioSource = GetComponent<AudioSource>();
         }
-        else
+
+        void Start()
         {
-            Destroy(gameObject);
+            audioSource.Play();
         }
 
-        audioSource = GetComponent<AudioSource>();
-    }
+        public void PausarMusica()
+        {
+            audioSource.Pause();
+        }
 
-    void Start()
-    {
-        audioSource.Play();
-    }
+        public void ReanudarMusica()
+        {
+            audioSource.UnPause();
+        }
 
-    public void PausarMusica()
-    {
-        audioSource.Pause();
-    }
-
-    public void ReanudarMusica()
-    {
-        audioSource.UnPause();
-    }
-
-    public void ReiniciarMusica()
-    {
-        audioSource.Stop();
-        audioSource.Play();
+        public void ReiniciarMusica()
+        {
+            audioSource.Stop();
+            audioSource.Play();
+        }
     }
 }

@@ -126,17 +126,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-<<<<<<< HEAD:Juego/Assets/Joel/Sprites/Pausa.png.meta
-        y: 15
-        width: 1167
-        height: 1137
-=======
         y: 0
-        width: 70
-        height: 70
->>>>>>> origin/Samuel:Juego/Assets/Kenney Platformer Art Deluxe/Candy expansion/Tiles/lollipopBase.png.meta
+        width: 0
+        height: 0
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -149,77 +143,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Pausa_1
-      rect:
-        serializedVersion: 2
-        x: 102
-        y: 906
-        width: 24
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd6ac331156035690800000000000000
-      internalID: -7614735599668517155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pausa_2
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 779
-        width: 10
-        height: 121
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0424b58bf11f6dc0800000000000000
-      internalID: -3643673801541802996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Pausa_3
-      rect:
-        serializedVersion: 2
-        x: 997
-        y: 55
-        width: 17
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf58bb61981c89a00800000000000000
-      internalID: 763572931375367675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 99383c3ccdaed734ab32725b92fcd556
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -230,9 +158,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Pausa_0: 7226405695312399860
-      Pausa_1: -7614735599668517155
-      Pausa_2: -3643673801541802996
-      Pausa_3: 763572931375367675
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

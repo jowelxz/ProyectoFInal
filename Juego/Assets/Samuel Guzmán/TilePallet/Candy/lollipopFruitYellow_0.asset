@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: lollipopFruitYellow_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -2360792552238495801, guid: a04e649c625d39f4ca59a320a2ff1827, type: 3}
+  m_Sprite: {fileID: -2360792552238495801, guid: 0493b1e25cf2fe34586471147004237a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

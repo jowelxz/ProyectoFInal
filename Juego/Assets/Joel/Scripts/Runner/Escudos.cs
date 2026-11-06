@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class Escudos : MonoBehaviour
+namespace Joel
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class Escudos : MonoBehaviour
     {
-        if (collision.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            PlayerStats jugador =
-                collision.GetComponent<PlayerStats>();
-
-            if (jugador != null)
+            if (collision.CompareTag("Player"))
             {
-                jugador.tieneEscudo = true;
-                Destroy(gameObject);
+                PlayerStats jugador =
+                    collision.GetComponent<PlayerStats>();
+
+                if (jugador != null)
+                {
+                    jugador.tieneEscudo = true;
+                    Destroy(gameObject);
+                }
             }
         }
     }

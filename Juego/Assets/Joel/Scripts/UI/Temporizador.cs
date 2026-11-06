@@ -1,31 +1,34 @@
 using UnityEngine;
 using TMPro;
 
-public class Temporizador : MonoBehaviour
+namespace Joel
 {
-    public TMP_Text textoTemporizador;
-    public float tiempo = 300f;
-
-    void Update()
+    public class Temporizador : MonoBehaviour
     {
-        if (tiempo > 0)
+        public TMP_Text textoTemporizador;
+        public float tiempo = 300f;
+
+        void Update()
         {
-            tiempo -= Time.deltaTime;
+            if (tiempo > 0)
+            {
+                tiempo -= Time.deltaTime;
 
-            int minutos = Mathf.FloorToInt(tiempo / 60);
-            int segundos = Mathf.FloorToInt(tiempo % 60);
+                int minutos = Mathf.FloorToInt(tiempo / 60);
+                int segundos = Mathf.FloorToInt(tiempo % 60);
 
-            textoTemporizador.text =
-                minutos.ToString("00") + ":" + segundos.ToString("00");
-        }
-        else
-        {
-            tiempo = 0;
-            textoTemporizador.text = "00:00";
+                textoTemporizador.text =
+                    minutos.ToString("00") + ":" + segundos.ToString("00");
+            }
+            else
+            {
+                tiempo = 0;
+                textoTemporizador.text = "00:00";
 
-            FindFirstObjectByType<GameManager>().MostrarPerdiste();
+                FindFirstObjectByType<GameManager>().MostrarPerdiste();
 
-            enabled = false;
+                enabled = false;
+            }
         }
     }
 }

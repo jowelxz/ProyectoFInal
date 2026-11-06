@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: gummyWormGreenHead_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -3480177849849545864, guid: 7354578f7fa60ee49a9e6b58e4c3ac65, type: 3}
+  m_Sprite: {fileID: -3480177849849545864, guid: 0c7d20fb5e1993147ae6e3486b3c9328, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

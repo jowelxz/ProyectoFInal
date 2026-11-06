@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: chocoCenter_rounded_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 9127782360116326659, guid: 8bdcad545d29ed4499bfd3c7c059b549, type: 3}
+  m_Sprite: {fileID: 9127782360116326659, guid: c8d536f8256991e44bfebe37b42f3ed7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

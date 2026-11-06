@@ -1,17 +1,21 @@
 using UnityEngine;
 
-public class RecolectarMoño : MonoBehaviour
+namespace Joel
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class RecolectarMoño : MonoBehaviour
     {
-        if (collision.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            PlayerStats jugador = collision.GetComponent<PlayerStats>();
-
-            if (jugador != null)
+            if (collision.CompareTag("Player"))
             {
-                jugador.tieneMoño = true;
-                Destroy(gameObject);
+                PlayerStats jugador =
+                    collision.GetComponent<PlayerStats>();
+
+                if (jugador != null)
+                {
+                    jugador.tieneMoño = true;
+                    Destroy(gameObject);
+                }
             }
         }
     }

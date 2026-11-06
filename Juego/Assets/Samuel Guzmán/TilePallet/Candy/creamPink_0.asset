@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: creamPink_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 67922541742147117, guid: cbdcece2ec3bf3a4186ad7dd17d41e62, type: 3}
+  m_Sprite: {fileID: 67922541742147117, guid: b7af8926f294471499c9ec273e840c75, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

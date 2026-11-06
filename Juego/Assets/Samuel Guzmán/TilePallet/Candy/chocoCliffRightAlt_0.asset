@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: chocoCliffRightAlt_0
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: 8918799274370049577, guid: 6aec51d742079e64ab45af5e7320e8b0, type: 3}
+  m_Sprite: {fileID: 8918799274370049577, guid: d47d02e4db07a01408c1623f9d7e2481, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

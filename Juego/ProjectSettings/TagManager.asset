@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-<<<<<<< HEAD
-=======
-  - Suelo
->>>>>>> origin/Samuel
-  - Ground
+  tags: []
   layers:
   - Default
   - TransparentFX

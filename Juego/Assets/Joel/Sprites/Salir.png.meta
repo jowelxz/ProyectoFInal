@@ -119,19 +119,12 @@ TextureImporter:
       name: Salir_0
       rect:
         serializedVersion: 2
-<<<<<<< HEAD:Juego/Assets/Joel/Sprites/Salir.png.meta
-        x: 1588
-        y: 719
-        width: 12
-        height: 5
-=======
         x: 0
         y: 0
-        width: 70
-        height: 70
->>>>>>> origin/Samuel:Juego/Assets/Kenney Platformer Art Deluxe/Candy expansion/Tiles/cakeHalfAlt.png.meta
+        width: 0
+        height: 0
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -144,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Salir_1
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 28
-        width: 1964
-        height: 679
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d6a9205c1a09332e0800000000000000
-      internalID: -2147213572856178067
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cba585436e7ef2741a06d4985eb784a4
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -181,7 +152,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Salir_0: -5086458757861956760
-      Salir_1: -2147213572856178067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,85 +1,93 @@
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour
+namespace Joel
 {
-    [SerializeField] public int vida = 100;
-    [SerializeField] public int vidaMaxima = 100;
-
-    public int puntos = 0;
-
-    public UIManager uiManager;
-
-    public TMPro.TextMeshProUGUI textoPuntos;
-
-    public bool tieneEscudo = false;
-    public GameObject pachesEquipado;
-
-    public bool tieneMoño = false;
-    public GameObject moñoEquipado;
-
-    void Update()
+    public class PlayerStats : MonoBehaviour
     {
-        pachesEquipado.SetActive(tieneEscudo);
-        moñoEquipado.SetActive(tieneMoño);
-    }
+        [SerializeField] public int vida = 100;
+        [SerializeField] public int vidaMaxima = 100;
 
-    void Start()
-    {
-        ActualizarBarra();
-    }
+        public int puntos = 0;
 
-    public void SumarVida(int cantidad)
-    {
-        vida += cantidad;
+        public UIManager uiManager;
 
-        if (vida > vidaMaxima)
+        public TMPro.TextMeshProUGUI textoPuntos;
+
+        public bool tieneEscudo = false;
+        public GameObject pachesEquipado;
+
+        public bool tieneMoño = false;
+        public GameObject moñoEquipado;
+
+        void Update()
         {
-            vida = vidaMaxima;
+            if (pachesEquipado != null)
+                pachesEquipado.SetActive(tieneEscudo);
+
+            if (moñoEquipado != null)
+                moñoEquipado.SetActive(tieneMoño);
         }
 
-        ActualizarBarra();
-    }
-
-    public void RestarVida(int daño)
-    {
-        vida -= daño;
-
-        if (vida < 0)
-            vida = 0;
-
-        ActualizarBarra();
-
-        if (vida <= 0)
+        void Start()
         {
-            FindFirstObjectByType<GameManager>().MostrarPerdiste();
-            Debug.Log("GAME OVER");
+            ActualizarBarra();
         }
-    }
 
-    void ActualizarBarra()
-    {
-        uiManager.SetFillAmount((float)vida / vidaMaxima);
-
-        if (vida >= 80)
+        public void SumarVida(int cantidad)
         {
-            uiManager.ColorBarra(Color.green);
+            vida += cantidad;
+
+            if (vida > vidaMaxima)
+                vida = vidaMaxima;
+
+            ActualizarBarra();
         }
-        else if (vida > 40)
+
+        public void RestarVida(int daño)
         {
-            uiManager.ColorBarra(new Color(1f, 0.5f, 0f));
+            vida -= daño;
+
+            if (vida < 0)
+                vida = 0;
+
+            ActualizarBarra();
+
+            if (vida <= 0)
+            {
+                FindFirstObjectByType<GameManager>().MostrarPerdiste();
+                Debug.Log("GAME OVER");
+            }
         }
-        else
+
+        void ActualizarBarra()
         {
-            uiManager.ColorBarra(Color.red);
+            if (uiManager == null || vidaMaxima <= 0)
+                return;
+
+            uiManager.SetFillAmount((float)vida / vidaMaxima);
+
+            if (vida >= 80)
+            {
+                uiManager.ColorBarra(Color.green);
+            }
+            else if (vida > 40)
+            {
+                uiManager.ColorBarra(new Color(1f, 0.5f, 0f));
+            }
+            else
+            {
+                uiManager.ColorBarra(Color.red);
+            }
         }
-    }
 
-    public void SumarPuntos(int cantidad)
-    {
-        puntos += cantidad;
+        public void SumarPuntos(int cantidad)
+        {
+            puntos += cantidad;
 
-        textoPuntos.text = puntos + " / 100";
+            if (textoPuntos != null)
+                textoPuntos.text = puntos + " / 100";
 
-        Debug.Log("Puntos actuales: " + puntos);
+            Debug.Log("Puntos actuales: " + puntos);
+        }
     }
 }

@@ -1,27 +1,30 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+namespace Joel
 {
-    [SerializeField] private Image _barra;
-
-    public void SumarFillAmount(float Mamount = 0.1f)
+    public class UIManager : MonoBehaviour
     {
-        _barra.fillAmount += Mamount;
-    }
+        [SerializeField] private Image _barra;
 
-    public void RestarFillAmount(float Ramont = 0.1f)
-    {
-        _barra.fillAmount -= Ramont;
-    }
+        public void SumarFillAmount(float Mamount = 0.1f)
+        {
+            _barra.fillAmount += Mamount;
+        }
 
-    public void SetFillAmount(float amount)
-    {
-        _barra.fillAmount = Mathf.Clamp01(amount);
-    }
+        public void RestarFillAmount(float Ramont = 0.1f)
+        {
+            _barra.fillAmount -= Ramont;
+        }
 
-    public void ColorBarra(Color color)
-    {
-        _barra.color = color;
+        public void SetFillAmount(float amount)
+        {
+            _barra.fillAmount = Mathf.Clamp01(amount);
+        }
+
+        public void ColorBarra(Color color)
+        {
+            _barra.color = color;
+        }
     }
 }

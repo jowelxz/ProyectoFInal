@@ -1,29 +1,31 @@
-
 using UnityEngine;
 
-public class TrampaNormales : MonoBehaviour
+namespace Joel
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    public class TrampaNormales : MonoBehaviour
     {
-        if (collision.gameObject.CompareTag("Player"))
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            PlayerStats vidaJugador =
-                collision.gameObject.GetComponent<PlayerStats>();
-
-            if (vidaJugador != null)
+            if (collision.gameObject.CompareTag("Player"))
             {
-                if (vidaJugador.tieneEscudo)
-                {
-                    vidaJugador.tieneEscudo = false;
-                    Debug.Log("¡El escudo bloqueó el golpe!");
-                }
-                else
-                {
-                    vidaJugador.RestarVida(10);
+                PlayerStats vidaJugador =
+                    collision.gameObject.GetComponent<PlayerStats>();
 
-                    if (vidaJugador.vida <= 0)
+                if (vidaJugador != null)
+                {
+                    if (vidaJugador.tieneEscudo)
                     {
-                        Destroy(collision.gameObject);
+                        vidaJugador.tieneEscudo = false;
+                        Debug.Log("¡El escudo bloqueó el golpe!");
+                    }
+                    else
+                    {
+                        vidaJugador.RestarVida(10);
+
+                        if (vidaJugador.vida <= 0)
+                        {
+                            Destroy(collision.gameObject);
+                        }
                     }
                 }
             }

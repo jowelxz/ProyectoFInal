@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class Curaciones : MonoBehaviour
+namespace Joel
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class Curaciones : MonoBehaviour
     {
-        if (collision.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            PlayerStats vidaJugador =
-                collision.GetComponent<PlayerStats>();
-
-            if (vidaJugador != null)
+            if (collision.CompareTag("Player"))
             {
-                vidaJugador.SumarVida(20);
-                Destroy(gameObject);
+                PlayerStats vidaJugador =
+                    collision.GetComponent<PlayerStats>();
+
+                if (vidaJugador != null)
+                {
+                    vidaJugador.SumarVida(20);
+                    Destroy(gameObject);
+                }
             }
         }
     }

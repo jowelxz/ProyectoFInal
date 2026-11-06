@@ -1,31 +1,36 @@
 using UnityEngine;
 
-public class Meta : MonoBehaviour
+namespace Joel
 {
-    public GameObject panelFaltanPuntos;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class Meta : MonoBehaviour
     {
-        if (collision.CompareTag("Player"))
-        {
-            PlayerStats jugador = collision.GetComponent<PlayerStats>();
+        public GameObject panelFaltanPuntos;
 
-            if (jugador != null)
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Player"))
             {
-                if (jugador.puntos >= 100 && jugador.tieneMoño)
+                PlayerStats jugador =
+                    collision.GetComponent<PlayerStats>();
+
+                if (jugador != null)
                 {
-                    FindFirstObjectByType<GameManager>().MostrarGanaste();
-                }
-                else
-                {
-                    panelFaltanPuntos.SetActive(true);
+                    if (jugador.puntos >= 100 && jugador.tieneMoño)
+                    {
+                        FindFirstObjectByType<GameManager>()
+                            .MostrarGanaste();
+                    }
+                    else
+                    {
+                        panelFaltanPuntos.SetActive(true);
+                    }
                 }
             }
         }
-    }
 
-    public void CerrarMensaje()
-    {
-        panelFaltanPuntos.SetActive(false);
+        public void CerrarMensaje()
+        {
+            panelFaltanPuntos.SetActive(false);
+        }
     }
 }
